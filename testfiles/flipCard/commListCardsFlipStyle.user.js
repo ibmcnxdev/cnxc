@@ -68,7 +68,7 @@ if(typeof(dojo) != "undefined") {
     if (!tileStyles) {
       var newTileStyles =
         '<style id="tileStyles">'+
-          '.cTile{width:200px;height:200px;background-color:rgb(250,250,250);cursor:pointer;position:relative;margin:5px 15px 15px 0;white-space:normal;}' +
+          '.cTile{width:200px;height:200px;background-color:rgb(220,220,220);cursor:pointer;position:relative;margin:5px 15px 15px 0;white-space:normal;}' +
           '.cTileTextContainter{padding:5px;width:200px;height:200px;overflow:hidden;}' +
           '.cTileImg {background:linear-gradient(white,black);border-radius:.5em;}' +
           '.cTileImg img{width:200px;height:200px;opacity:0.80;border-radius:.5em;}' +
