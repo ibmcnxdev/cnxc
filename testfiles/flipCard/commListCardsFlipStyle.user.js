@@ -84,7 +84,7 @@ if(typeof(dojo) != "undefined") {
           '.front, .back { backface-visibility:hidden; position: absolute; top:0; left:0; border-radius:.5em; border:1px solid #aaa; box-shadow:5px 5px 15px #DDD;}'+
           '.front { z-index: 2; }' +
           '.front:hover { opacity: .15; }' +
-          '.back { transform: rotateY(180deg); background-color:pink; color:#505050; text-align:left; boder:1px solid black; overflow:hidden; }' +
+          '.back { transform: rotateY(180deg); background-color:Gainsboro; color:#505050; text-align:left; boder:1px solid black; overflow:hidden; }' +
         '</style>';
 
       dojo.place(newTileStyles, dojo.query("#lconn_communities_catalog_widgets_ResultsDisplayWidget_0 table")[0], "before");
