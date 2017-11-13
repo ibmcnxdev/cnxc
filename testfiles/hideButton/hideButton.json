@@ -4,7 +4,7 @@
       "application": "Hide Buttons",
       "payload": {
         "include-files": [
-          "/static/testfiles/hideButton/hideButton.user.js"
+          "static/testfiles/hideButton/hideButton.user.js"
         ],
                 "include-repo": {
                     "name": "cnxc"
