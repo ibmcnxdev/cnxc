@@ -1,0 +1,24 @@
+{
+  "extensions": [
+	{
+      "application": "Hide Buttons",
+      "payload": {
+        "include-files": [
+          "/static/testfiles/hideButton/hideButton.user.js"
+        ],
+                "include-repo": {
+                    "name": "cnxc"
+                }
+      },
+      "name": "Communities Hide Buttons",
+      "type": "com.ibm.customizer.ui",
+      "path": "communities"
+    }
+  ],
+  "name": "Hide Buttons",
+  "description": "Does not render Communities New Commuities Buttons",
+  "services": [
+    "Customizer"
+  ],
+  "title": "Hide Buttons"
+}
