@@ -1,10 +1,10 @@
 {
   "extensions": [
 	{
-      "application": "Hide Buttons",
+      "application": "unHide Buttons",
       "payload": {
         "include-files": [
-          "testfiles/hideButton/hideButton.user.js"
+          "testfiles/hideButton/unhideButton.user.js"
         ],
                 "include-repo": {
                     "name": "cnxc"
@@ -15,10 +15,10 @@
       "path": "communities"
     }
   ],
-  "name": "Hide Buttons",
-  "description": "Does not render Communities New Communities Buttons",
+  "name": "unHide Buttons",
+  "description": "Render Communities New Communities Buttons",
   "services": [
     "Customizer"
   ],
-  "title": "Hide Buttons"
+  "title": "unHide Buttons"
 }
