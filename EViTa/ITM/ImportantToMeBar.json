@@ -1,0 +1,37 @@
+{
+    "id": "d02e2430-e3da-11e7-a1d9-53879330f0e9",
+    "name": "EViTa",
+    "title": "EViTa",
+    "description": "EViTa",
+    "services": [
+        "ImportantToMe"
+    ],
+    "extensions": [
+        {
+            "id": "11a0f601-9558-41c3-92f1-c204bc2fffc9",
+            "name": "EViTa",
+            "type": "com.ibm.itm.entry.person",
+            "payload": {
+                "url": "/profiles/html/profileView.do?userid=$1250013096",
+                "id": "5e607614-7b98-44c3-9748-d010d66521a8",
+                "name": "EViTa MMI",
+                "states": [],
+                "icon": {
+                    "url": "/profiles/photo2.do?userid=1250013096",
+                    "alt": "EViTa's picture"
+                },
+                "exId": "1250013096",
+                "show": true,
+                "showHighlight": false,
+                "tel": {
+                    "work": "+49 8990480150",
+                    "mobile": "",
+                    "fax": "+49 08990480151"
+                },
+                "tags": []
+            },
+            "path": "OrientMe",
+            "application": "EViTa"
+        }
+    ]
+}
