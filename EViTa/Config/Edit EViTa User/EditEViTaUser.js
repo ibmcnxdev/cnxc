@@ -4,7 +4,8 @@
 // @version      0.1
 // @description  Extend EViTa Config with Edit Button
 // @author       Michael Siegrist
-// @include      *://*collabserv*.ibm.com/manage/user/updateUser/basic/showEdit*
+// @include      *://*collabserv.com/manage/user/updateUser/basic/showEdit*
+// @include      *://*collabservintegration.com/manage/user/updateUser/basic/showEdit*
 // @grant        none
 // ==/UserScript==
 
