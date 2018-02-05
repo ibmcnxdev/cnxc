@@ -12,7 +12,7 @@
 
 (function() {
     'use strict';
-     if (dojo.byId("firstName").value=="EViTa") {
+     if (dojo.byId("firstName").value=="EViTA") {
            dojo.place("<input type=\"button\" class=\"lotusFormButton\" id=\"cnfPage\" onclick=\"parent.location='http://msg.mmi-consult.de/';\" value=\"Config\" aria-label=\"Move to EViTA Config\">","userAccountPage","after");
      }
 
