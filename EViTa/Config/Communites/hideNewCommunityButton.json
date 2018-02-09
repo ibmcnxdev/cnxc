@@ -1,0 +1,24 @@
+{
+  "extensions": [
+	{
+      "application": "Hide New Community Button",
+      "payload": {
+        "include-files": [
+          "EViTa/Config/Communites/hideNewCommunityButton.js"
+        ],
+                "include-repo": {
+                    "name": "cnxc"
+                }
+      },
+      "name": "Hide New Community Button",
+      "type": "com.ibm.customizer.ui",
+      "path": "communities"
+    }
+  ],
+  "name": "Hide New Community Button",
+  "description": "Does not render New Community Buttons",
+  "services": [
+    "Customizer"
+  ],
+  "title": "mmi - Hide New Community Button"
+}

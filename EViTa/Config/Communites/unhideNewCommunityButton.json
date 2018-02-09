@@ -1,0 +1,30 @@
+{
+  "extensions": [
+	{
+      "application": "unHide New Community Button",
+      "payload": {
+	        "match": {
+                "user-name": [
+                "User One",
+                "User Two"
+							 ]
+					 },
+        "include-files": [
+          "EViTa/Config/Communites/unhideNewCommunityButton.js"
+        ],
+                "include-repo": {
+                    "name": "cnxc"
+                }
+      },
+      "name": "unHide New Community Button",
+      "type": "com.ibm.customizer.ui",
+      "path": "communities"
+    }
+  ],
+  "name": "unHide New Community Button",
+  "description": "Render Communities New Communities Buttons",
+  "services": [
+    "Customizer"
+  ],
+  "title": "mmi - unHide New Community Button"
+}

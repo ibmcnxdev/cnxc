@@ -1,0 +1,33 @@
+{
+    "id": "",
+    "name": "Add EViTA Config To User Profile",
+    "title": "mmi - Add EViTA Config To User Profile",
+    "description": "Add EViTA Config Links To User Profile ",
+    "services": [
+        "Customizer"
+    ],
+    "extensions": [
+        {
+            "id": "",
+            "name": "Add EViTA Config To User Profile",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "match": {
+                    "user-name": [
+                        "User One",
+                        "User Two",
+                        "User Three"
+                    ]
+                },
+                "include-files": [
+                    "EViTa/Config/Profile/ProfileConfig.js"
+                ],
+                "include-repo": {
+                    "name": "cnxc"
+                }
+            },
+            "path": "global",
+            "application": "Add EViTA Config To User Profile"
+        }
+    ]
+}
