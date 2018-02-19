@@ -9,6 +9,42 @@
     "extensions": [
         {
             
+            "name": "Hide New Community Button",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "EViTa/Config/Communites/hideNewCommunityButton.js"
+                ],
+                "include-repo": {
+                    "name": "cnxc"
+                }
+            },
+            "path": "communities",
+            "application": "mmi - EViTA"
+        },
+        {
+            
+            "name": "unHide New Community Button",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "match": {
+                    "user-name": [
+                        "Michael Siegrist",
+                        "Manfre Meise"
+                    ]
+                },
+                "include-files": [
+                    "EViTa/Config/Communites/unhideNewCommunityButton.js"
+                ],
+                "include-repo": {
+                    "name": "cnxc"
+                }
+            },
+            "path": "communities",
+            "application": "mmi - EViTA"
+        },
+        {
+            
             "name": "Communities FlipCard Extension",
             "type": "com.ibm.customizer.ui",
             "payload": {
