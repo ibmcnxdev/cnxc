@@ -1,0 +1,48 @@
+{
+    
+    "name": "mmi - EViTA",
+    "title": "mmi - EViTA",
+    "description": "mmi - EViTA",
+    "services": [
+        "Customizer"
+    ],
+    "extensions": [
+        {
+            
+            "name": "Communities FlipCard Extension",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "testfiles/flipCard/commListCardsFlipStyle.user.js"
+                ],
+                "include-repo": {
+                    "name": "cnxc"
+                }
+            },
+            "path": "communities",
+            "application": "mmi - EViTA"
+        },
+        {
+            
+            "name": "Add EViTA Config To User Profile",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "match": {
+                    "user-name": [
+                        "Manfred Meise",
+                        "Boris Eberlein",
+                        "Michael Siegrist"
+                    ]
+                },
+                "include-files": [
+                    "EViTa/Config/Profile/ProfileConfig.js"
+                ],
+                "include-repo": {
+                    "name": "cnxc"
+                }
+            },
+            "path": "global",
+            "application": "mmi - EViTA"
+        }
+    ]
+}
