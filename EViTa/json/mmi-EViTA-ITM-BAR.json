@@ -1,0 +1,37 @@
+{
+    
+    "name": "mmi - EViTA - ITM Bar",
+    "title": "mmi - EViTA - ITM Bar",
+    "description": "mmi - EViTA - ITM Bar",
+    "services": [
+        "ImportantToMe"
+    ],
+    "extensions": [
+        {
+    
+            "name": "EViTA",
+            "type": "com.ibm.itm.entry.person",
+            "payload": {
+                "url": "/profiles/html/profileView.do?userid=${exId}",
+                "id": "c2a35967-6e6e-46df-8dcd-4dc6371300d4",
+                "name": "EViTA MMI",
+                "states": [],
+                "icon": {
+                    "url": "/profiles/photo2.do?userid=1000518426",
+                    "alt": "EViTA's picture"
+                },
+                "exId": "1000518426",
+                "show": true,
+                "showHighlight": false,
+                "tel": {
+                    "work": "+49 8990480150",
+                    "mobile": "",
+                    "fax": "+49 8990480151"
+                },
+                "tags": []
+            },
+            "path": "OrientMe",
+            "application": "mmi - EViTA - ITM Bar"
+        }
+    ]
+}
