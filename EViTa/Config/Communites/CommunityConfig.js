@@ -1,0 +1,48 @@
+// ==UserScript==
+// @name         Add EViTa Community Config
+// @namespace    http://www.mmi-consult.de
+// @version      0.1
+// @description  Add EViTa Community Config
+// @author       You
+// @include      *://apps.*collabserv.com/communities/service/html/communityview*fullpageWidgetId=Members
+// @grant        none
+// ==/UserScript==
+
+if(typeof(dojo) != "undefined") {
+    	require(["dojo/domReady!","dojo/query", "dojo/NodeList-traverse"], function(){
+        try {
+            // utility function to let us wait for a specific element of the page to load...
+            var waitFor = function(callback, elXpath, elXpathRoot, maxInter, waitTime) {
+                if(!elXpathRoot) var elXpathRoot = dojo.body();
+                if(!maxInter) var maxInter = 10000;  // number of intervals before expiring
+                if(!waitTime) var waitTime = 1;  // 1000=1 second
+                if(!elXpath) return;
+                var waitInter = 0;  // current interval
+                var intId = setInterval( function(){
+                    if( ++waitInter<maxInter && !dojo.query(elXpath,elXpathRoot).length) return;
+
+                    clearInterval(intId);
+                    if( waitInter >= maxInter) {
+                        //console.log("**** WAITFOR ["+elXpath+"] WATCH EXPIRED!!! interval "+waitInter+" (max:"+maxInter+")");
+                    } else {
+                        //console.log("**** WAITFOR ["+elXpath+"] WATCH TRIPPED AT interval "+waitInter+" (max:"+maxInter+")");
+                        callback();
+                    }
+                }, waitTime);
+            };
+
+            waitFor( function(){
+                if (dojo.byId("memberAddButtonLink")) {
+                    var arra =dojo.query(".lotusFloatContent.commFocusPT");
+                    dojo.forEach(arra, function(item, index){
+                        if (arra[index].innerText.slice(0,5)=="EViTA"){
+                            dojo.place("<a> | </a><a role=\"button\" onclick=\"parent.location='https://www.mmi-consult.de';\" href=\"https://www.mmi-consult.de\" title=\"Config\" hastooltip=\"dijit_Tooltip_2664\">Config</a>",arra[index].lastChild.lastChild,"after");
+                        }
+                    });
+                }
+},".fn.url.commFocusML");
+      } catch(e) {
+          console.log("Exception occurred in CommunityConfig: " + e);
+      }
+   });
+}
