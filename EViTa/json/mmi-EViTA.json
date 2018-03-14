@@ -79,6 +79,23 @@
             },
             "path": "global",
             "application": "mmi - EViTA"
+        },
+        {
+            
+            "name": "Add EViTA Config To Community",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "match": {
+					"include-files": [
+                    "EViTa/Config/Communites/CommunityConfig.js"
+                ],
+                "include-repo": {
+                    "name": "cnxc"
+                }
+            },
+            "path": "global",
+            "application": "mmi - EViTA",
+            "state": "enabled"
         }
     ]
 }
