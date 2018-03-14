@@ -36,7 +36,10 @@ if(typeof(dojo) != "undefined") {
                     var arra =dojo.query(".lotusFloatContent.commFocusPT");
                     dojo.forEach(arra, function(item, index){
                         if (arra[index].innerText.slice(0,5)=="EViTA"){
-                            dojo.place("<a> | </a><a role=\"button\" onclick=\"parent.location='https://www.mmi-consult.de';\" href=\"https://www.mmi-consult.de\" title=\"Config\" hastooltip=\"dijit_Tooltip_2664\">Config</a>",arra[index].lastChild.lastChild,"after");
+                            var strCLink='https://justteamup.eu-de.mybluemix.net/justsearch/config/community/' + communityActionData.communityOrgId+ '/' + communityActionData.uuid;
+                            dojo.place("<a> | </a><a role=\"button\" id=\"mmicommunity\" onclick=\"parent.location='https://justteamup.eu-de.mybluemix.net/justsearch/config/community/' + communityActionData.communityOrgId+ '/' + communityActionData.uuid+ '\"';\" href=\"https://justteamup.eu-de.mybluemix.net/justsearch/config/community/communityActionData.communityOrgId/communityActionData.uuid\"\" title=\"Config\" hastooltip=\"dijit_Tooltip_2664\">Config</a>",arra[index].lastChild.lastChild,"after");
+                            document.getElementById("mmicommunity").setAttribute("href",strCLink);
+                    
                         }
                     });
                 }
