@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Add EViTa Community Config
 // @namespace    http://www.mmi-consult.de
-// @version      0.1
+// @version      0.2
 // @description  Add EViTa Community Config
 // @author       You
 // @include      *://apps.*collabserv.com/communities/service/html/communityview*fullpageWidgetId=Members
