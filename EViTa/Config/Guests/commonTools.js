@@ -384,5 +384,5 @@ if (__cBill_debug !== undefined) {
     //  =========================================================
 
     //  This variable holds the URL of the Connections instance
-    var __cBill_connectionsServer = 'https://apps.ce.collabserv.com';
+    var __cBill_connectionsServer = 'https://apps.na.collabserv.com';
 }
