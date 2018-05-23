@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Add EViTa Community Config
 // @namespace    http://www.mmi-consult.de
-// @version      0.2
+// @version      0.3
 // @description  Add EViTa Community Config
 // @author       You
 // @include      *://apps.*collabserv.com/communities/service/html/communityview*fullpageWidgetId=Members
@@ -37,8 +37,13 @@ if(typeof(dojo) != "undefined") {
                     dojo.forEach(arra, function(item, index){
                         if (arra[index].innerText.slice(0,5)=="EViTA"){
                             var strCLink='https://justteamup.eu-de.mybluemix.net/justsearch/config/community/' + communityActionData.communityOrgId+ '/' + communityActionData.uuid;
-                            dojo.place("<a> | </a><a role=\"button\" id=\"mmicommunity\" onclick=\"parent.location='https://justteamup.eu-de.mybluemix.net/justsearch/config/community/' + communityActionData.communityOrgId+ '/' + communityActionData.uuid+ '\"';\" href=\"https://justteamup.eu-de.mybluemix.net/justsearch/config/community/communityActionData.communityOrgId/communityActionData.uuid\"\" title=\"Config\" hastooltip=\"dijit_Tooltip_2664\">Config</a>",arra[index].lastChild.lastChild,"after");
-                            document.getElementById("mmicommunity").setAttribute("href",strCLink);
+                            if (arra[index].lastChild.lastChild) {
+							dojo.place("<a> | </a><a role=\"button\" id=\"mmicommunity\" onclick=\"parent.location='https://justteamup.eu-de.mybluemix.net/justsearch/config/community/' + communityActionData.communityOrgId+ '/' + communityActionData.uuid+ '\"';\" href=\"https://justteamup.eu-de.mybluemix.net/justsearch/config/community/communityActionData.communityOrgId/communityActionData.uuid\"\" title=\"Config\" hastooltip=\"dijit_Tooltip_2664\">Config</a>",arra[index].lastChild.lastChild,"after");
+							} else
+                            {
+                            dojo.place("<br><a role=\"button\" id=\"mmicommunity\" onclick=\"parent.location='https://justteamup.eu-de.mybluemix.net/justsearch/config/community/' + communityActionData.communityOrgId+ '/' + communityActionData.uuid+ '\"';\" href=\"https://justteamup.eu-de.mybluemix.net/justsearch/config/community/communityActionData.communityOrgId/communityActionData.uuid\"\" title=\"Config\" hastooltip=\"dijit_Tooltip_2664\">Config</a>",arra[index].lastChild,"after");
+                            }
+							document.getElementById("mmicommunity").setAttribute("href",strCLink);
                     
                         }
                     });
