@@ -302,7 +302,7 @@ if (__cBill_debug !== undefined) {
                         dojo.require("dojo.cookie");
                         require(["dojo/domReady!"], callback());
                     } else {
-                        alert(n.label + '.__cBill_waitForDojo.do : BAD DOJO version !');
+                        //alert(n.label + '.__cBill_waitForDojo.do : BAD DOJO version !');
                     }
                 }
             }, waitTime);
