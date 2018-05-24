@@ -5,7 +5,7 @@
 // @description  Add EViTa Community Config
 // @author       You
 // @include      *://apps.*collabserv.com/communities/service/html/communityview*fullpageWidgetId=Members
-// @include      *://apps.*collabserv.com/communities/service/html/communitystart*fullpageWidgetId=Members
+// @include      *://apps.*collabserv.com/communities/service*fullpageWidgetId=Members
 // @grant        none
 // ==/UserScript==
 
