@@ -43,8 +43,9 @@ if ((document.location.pathname === '/homepage/orgadmin/orgadmin.jsp') || (docum
                     //  Create the new <A> element
                     //  Depending on your region, you may need to use apps.ce or apps.ap instead of apps.na URL below
                     //
-                    let inviteA = dojo.create('a', { innerHTML: 'Gast einladen', class: 'invite', target: '_parent', role: 'menuitem', tabindex: '0', href: '/manage/subscribers/showInviteGuestDialog/input' }, inviteLI);
-                    __cBill_logger('AddInviteGuest.giveAccess : A element created...');
+                    //let inviteA = dojo.create('a', { innerHTML: 'Gast einladen', class: 'invite', target: '_parent', role: 'menuitem', tabindex: '0', href: '/manage/subscribers/showInviteGuestDialog/input' }, inviteLI);
+                    let inviteA = dojo.create('a', { innerHTML: 'Gast einladen', class: 'invite', target: '_parent', role: 'menuitem', tabindex: '0', href: 'https://red-starter.eu-de.mybluemix.net/inviteguest' }, inviteLI);
+					__cBill_logger('AddInviteGuest.giveAccess : A element created...');
                     //
                     //  Now place the LI in the menu
                     //
