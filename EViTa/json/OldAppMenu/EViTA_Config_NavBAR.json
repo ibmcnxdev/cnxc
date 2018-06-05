@@ -1,0 +1,32 @@
+{
+  "extensions": [
+    {
+      "path": "com.ibm.navbar.order.190000",
+      "application": "EViTA Config",
+      "payload": {
+        "link": "https://justteamup.eu-de.mybluemix.net/justsearch/config/global/22029399",
+        "icon": "",
+        "tooltip": ""
+      },
+      "name": "EViTA Config",
+      "description": "EViTA Config",
+      "id": "91591740-52ff-4a9f-b5c8-5d5b58794bf5",
+      "type": "com.ibm.action.link",
+      "title": "EViTA Config"
+    }
+  ],
+  "payload": {
+    "pre-migration": {
+      "migration-type": "navbar",
+      "migration-date": "1492920891409"
+    }
+  },
+  "translations": {},
+  "name": "EViTA Config",
+  "description": "EViTA Config",
+  "services": [
+    "TopNavigationBar"
+  ],
+  "id": "91591740-52ff-4a9f-b5c8-5d5b58794bf5",
+  "title": "EViTA Config"
+}
