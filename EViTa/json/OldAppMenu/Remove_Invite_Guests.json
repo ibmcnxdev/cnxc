@@ -1,0 +1,25 @@
+{
+  "extensions": [
+    {
+      "path": ".invite",
+      "application": "Remove Invite Guests",
+      "name": "Remove Invite Guests Menu Item",
+      "id": "0d0f637b-663e-49d6-bc9e-de370291cfdc",
+      "type": "com.ibm.action.delete",
+      "title": "Remove Invite Guests Menu Item",
+      "object": ""
+    }
+  ],
+  "icon": "",
+  "name": "Remove Invite Guests",
+  "description": "Remove Invite Guests desc",
+  "entitlement": "",
+  "services": [
+    "TopNavigationBar",
+    "Verse"
+  ],
+  "id": "293d0d75-ea72-4b4f-9a3f-fc5a984a98e9",
+  "title": "Remove Invite Guests",
+  "app_id": "remove-invite",
+  "url": ""
+}

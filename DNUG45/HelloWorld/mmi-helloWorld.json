@@ -1,0 +1,23 @@
+{
+  "name": "Hello World Homepage Extension",
+  "title": "Hello World Homepage Extension",
+  "description": "Inserts text into IBM Connections classic Homepage",
+  "services": [
+    "Customizer"
+  ],
+  "extensions": [
+    {
+      "payload": {
+        "include-files": [
+          "DNUG45/HelloWorld/helloWorld.js"
+        ],
+	      "include-repo":{
+	       "name": "cnxc"
+	     }
+      },
+      "name": "Hello World Homepage Extension",
+      "type": "com.ibm.customizer.ui",
+      "path": "homepage"
+    }
+  ]
+}
