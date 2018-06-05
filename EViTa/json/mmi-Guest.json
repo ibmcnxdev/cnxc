@@ -24,7 +24,7 @@
                 ]
             },
             "name": "Add Invite Guest Extension",
-            "description": "PAdds te <Invite Guest> menu item for selected users",
+            "description": "Adds te <Invite Guest> menu item for selected users",
             "type": "com.ibm.customizer.ui"
         },
         {
