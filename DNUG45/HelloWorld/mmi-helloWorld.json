@@ -1,6 +1,6 @@
 {
-  "name": "Hello World Homepage Extension",
-  "title": "Hello World Homepage Extension",
+  "name": "DNUG45 - Hello World Homepage Extension",
+  "title": "DNUG45 - mmi - Hello World Homepage Extension",
   "description": "Inserts text into IBM Connections classic Homepage",
   "services": [
     "Customizer"
@@ -15,7 +15,7 @@
 	       "name": "cnxc"
 	     }
       },
-      "name": "Hello World Homepage Extension",
+      "name": "DNUG45 - Hello World Homepage Extension",
       "type": "com.ibm.customizer.ui",
       "path": "homepage"
     }

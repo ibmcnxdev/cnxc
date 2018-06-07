@@ -1,82 +1,104 @@
 {
-    "extensions": [{
-            "path": "activities",
-            "application": "Guest Model Package App",
-            "payload": {
-                "include-files": [
-                    "EViTa/Config/Guests/commonTools.js",
-                    "EViTa/Config/Guests/GuestModel_common.js",
-                    "EViTa/Config/Guests/ActivityNoExternal.js"
-                ]
-            },
-            "name": "Activity No External Extension",
-            "description": "Prevents selected users from creating Activities open to external people",
-            "type": "com.ibm.customizer.ui"
-        },
+    "name": "DNUG45 - Guest Model Restriction",
+    "title": "DNUG45 - Guest Model Restriction",
+    "description": "Full Implementation of the Guest Model Restriction",
+    "services": [
+        "Customizer"
+    ],
+    "state": "enabled",
+    "extensions": [
         {
-            "path": "global",
-            "application": "Guest Model Package App",
-            "payload": {
-                "include-files": [
-                    "EViTa/Config/Guests/commonTools.js",
-                    "EViTa/Config/Guests/GuestModel_common.js",
-                    "EViTa/Config/Guests/AddInviteGuest.js"
-                ]
-            },
-            "name": "Add Invite Guest Extension",
-            "description": "Adds te <Invite Guest> menu item for selected users",
-            "type": "com.ibm.customizer.ui"
-        },
-        {
-            "path": "communities",
-            "application": "Guest Model Package App",
+            "name": "DNUG45 - Community No External Extension",
+            "description": "Prevents selected users from creating Communities open to external people",
+            "type": "com.ibm.customizer.ui",
             "payload": {
                 "match": {
                     "url": "communities/service/html/communitycreate"
                 },
                 "include-files": [
-                    "EViTa/Config/Guests/commonTools.js",
-                    "EViTa/Config/Guests/GuestModel_common.js",
-                    "EViTa/Config/Guests/CommunityNoExternal.js"
-                ]
+                    "DNUG45/Guests/commonTools.js",
+                    "DNUG45/Guests/GuestModel_common.js",
+                    "DNUG45/Guests/CommunityNoExternal.js"
+                ],
+                "include-repo": {
+                    "name": "cnxc"
+                }
             },
-            "name": "Community No External Extension",
-            "description": "Prevents selected users from creating Communities open to external people",
-            "type": "com.ibm.customizer.ui"
+            "path": "communities",
+            "application": "DNUG45 - Guest Model Restriction",
+            "state": "enabled"
         },
         {
-            "path": "communities",
-            "application": "Guest Model Package App",
+            "name": "DNUG45 - Activity No External Extension",
+            "description": "Prevents selected users from creating Activities open to external people",
+            "type": "com.ibm.customizer.ui",
             "payload": {
-              "include-files": [
-                "EViTa/Config/Guests/commonTools.js",
-                "EViTa/Config/Guests/GuestModel_common.js",
-                "EViTa/Config/Guests/CommunityNoMembers.js"
-              ]
-            },
-            "name": "Community No Members",
-            "description": "Prevents selected users from adding External Members to an existing Community",
-            "type": "com.ibm.customizer.ui"
-          },
-          {
-            "path": "files",
-            "application": "Guest Model Package App",
-            "payload": {
-              "include-files": [
-                "EViTa/Config/Guests/commonTools.js",
-                "EViTa/Config/Guests/GuestModel_common.js",
-                "EViTa/Config/Guests/FilesNoExternal.js"
-              ]
-            },
-            "name": "Files No External",
-            "description": "Prevents selected users from creating files or folders open to external people",
-            "type": "com.ibm.customizer.ui"
-          }
+                "include-files": [
+                    "DNUG45/Guests/commonTools.js",
+                    "DNUG45/Guests/GuestModel_common.js",
+                    "DNUG45/Guests/ActivityNoExternal.js"
                 ],
-    "name": "Guest Model Restriction",
-    "description": "Full Implementation of the Guest Model Restriction",
-    "services": [
-        "Customizer"
-    ],
-    "title": "mmi - Guest Model Restriction"
+                "include-repo": {
+                    "name": "cnxc"
+                }
+            },
+            "path": "activities",
+            "application": "DNUG45 - Guest Model Restriction",
+            "state": "enabled"
+        },
+        {
+            "name": "DNUG45 - Add Invite Guest Extension",
+            "description": "Adds te <Invite Guest> menu item for selected users",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "DNUG45/Guests/commonTools.js",
+                    "DNUG45/Guests/GuestModel_common.js",
+                    "DNUG45/Guests/AddInviteGuest.js"
+                ],
+                "include-repo": {
+                    "name": "cnxc"
+                }
+            },
+            "path": "global",
+            "application": "DNUG45 - Guest Model Restriction",
+            "state": "enabled"
+        },
+        {
+			"name": "DNUG45 - Community No Members",
+            "description": "Prevents selected users from adding External Members to an existing Community",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "DNUG45/Guests/commonTools.js",
+                    "DNUG45/Guests/GuestModel_common.js",
+                    "DNUG45/Guests/CommunityNoMembers.js"
+                ],
+                "include-repo": {
+                    "name": "cnxc"
+                }
+            },
+            "path": "communities",
+            "application": "DNUG45 - Guest Model Restriction",
+            "state": "enabled"
+        },
+        {
+            "name": "DNUG45 - Files No External",
+            "description": "Prevents selected users from creating files or folders open to external people",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "DNUG45/Guests/commonTools.js",
+                    "DNUG45/Guests/GuestModel_common.js",
+                    "DNUG45/Guests/FilesNoExternal.js"
+                ],
+                "include-repo": {
+                    "name": "cnxc"
+                }
+            },
+            "path": "files",
+            "application": "DNUG45 - Guest Model Restriction",
+            "state": "enabled"
+        }
+    ]
 }

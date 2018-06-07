@@ -1,14 +1,14 @@
 {
-    "name": "mmi - hide/unhide New Community Button",
-    "title": "mmi - hide/unhide New Community Button",
-    "description": "mmi - hide/unhide New Community Button",
+    "name": "DNUG45 - mmi - hide-unhide New Community Button",
+    "title": "DNUG45 - mmi - hide-unhide New Community Button",
+    "description": "DNUG45 - mmi - hide-unhide New Community Button",
     "services": [
         "Customizer"
     ],
     "extensions": [
         {
             
-            "name": "Hide New Community Button",
+            "name": "DNUG45 Hide New Community Button",
             "type": "com.ibm.customizer.ui",
             "payload": {
                 "include-files": [
@@ -19,11 +19,11 @@
                 }
             },
             "path": "communities",
-            "application": "mmi - hide/unhide New Community Button"
+            "application": "DNUG45 hide-unhide New Community Button"
         },
         {
             
-            "name": "unHide New Community Button",
+            "name": "DNUG45 unHide New Community Button",
             "type": "com.ibm.customizer.ui",
             "payload": {
                 "match": {
@@ -40,7 +40,7 @@
                 }
             },
             "path": "communities",
-            "application": "mmi - hide/unhide New Community Button"
+            "application": "DNUG45 hide-unhide New Community Button"
         } 
     ]
 }

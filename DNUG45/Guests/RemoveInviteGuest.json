@@ -3,21 +3,21 @@
     {
       "path": ".invite",
       "application": "Remove Invite Guests",
-      "name": "Remove Invite Guests Menu Item",
+      "name": "DNUG45 - Remove Invite Guests Menu Item",
       "type": "com.ibm.action.delete",
       "title": "Remove Invite Guests Menu Item",
       "object": ""
     }
   ],
   "icon": "",
-  "name": "Remove Invite Guests",
+  "name": "DNUG45 - Remove Invite Guests",
   "description": "Remove Invite Guests desc",
   "entitlement": "",
   "services": [
     "TopNavigationBar",
 	"Verse"
   ],
-  "title": "Remove Invite Guests",
-  "app_id": "remove-invite",
+  "title": "DNUG45 - mmi - Remove Invite Guests",
+  "app_id": "DNUG45 - remove-invite",
   "url": ""
 }
