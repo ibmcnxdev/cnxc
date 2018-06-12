@@ -1,17 +1,20 @@
 // ==UserScript==
-// @name         Hide New Community Button 
+// @name         UnHide New Community Button
 // @namespace    http://www.mmi-consult.de
-// @version      0.1
-// @description  Hide the Start a community Button!
+// @version      0.2
+// @description  UnHide the new Community button
 // @author       Michael Siegrist
-// @include      *://apps.*collabserv.com/communities/*
+// @include      *://*collabserv.com/communities/*
 // @include      *://apps.collabservintegration.com/communities/*
 // @grant        none
 // ==/UserScript==
 
+
+
 if(typeof(dojo) != "undefined") {
 	require(["dojo/domReady!"],  function(){
-		//get ID with query("#id) and add style
-	   dojo.query("#createPlaceButton").style("display","none");
+        //UnHide "New Community Button"
+        dojo.query("#createPlaceButton").style("display","inline");
         });
 }
+
