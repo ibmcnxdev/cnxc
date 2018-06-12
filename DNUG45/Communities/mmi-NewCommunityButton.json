@@ -12,7 +12,7 @@
             "type": "com.ibm.customizer.ui",
             "payload": {
                 "include-files": [
-                    "DNUG45/Communites/hideNewCommunityButton.js"
+                    "DNUG45/Communities/hideNewCommunityButton.js"
                 ],
                 "include-repo": {
                     "name": "cnxc"
@@ -33,7 +33,7 @@
                     ]
                 },
                 "include-files": [
-                    "DNUG45/Communites/unhideNewCommunityButton.js"
+                    "DNUG45/Communities/unhideNewCommunityButton.js"
                 ],
                 "include-repo": {
                     "name": "cnxc"
