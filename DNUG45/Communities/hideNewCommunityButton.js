@@ -4,8 +4,6 @@
 // @version      0.2
 // @description  Hide the Start a community Button!
 // @author       Michael Siegrist
-// @include      *://*collabserv.com/communities/*
-// @include      *://apps.collabservintegration.com/communities/*
 // @grant        none
 // ==/UserScript==
 
