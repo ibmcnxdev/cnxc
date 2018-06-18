@@ -1,0 +1,25 @@
+{
+    "name": "DNUG45 - mmi - hide New Community Button",
+    "title": "DNUG45 - mmi - hide New Community Button",
+    "description": "DNUG45 - mmi - hide New Community Button",
+    "services": [
+        "Customizer"
+    ],
+    "extensions": [
+        {
+            
+            "name": "DNUG45 Hide New Community Button",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "DNUG45/Communities/hideNewCommunityButton.js"
+                ],
+                "include-repo": {
+                    "name": "cnxc"
+                }
+            },
+            "path": "communities",
+            "application": "DNUG45 hide New Community Button"
+        } 
+    ]
+}
