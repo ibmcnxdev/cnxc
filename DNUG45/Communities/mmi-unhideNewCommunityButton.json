@@ -1,0 +1,31 @@
+{
+    "name": "DNUG45 - mmi - unhide New Community Button",
+    "title": "DNUG45 - mmi - unhide New Community Button",
+    "description": "DNUG45 - mmi - unhide New Community Button",
+    "services": [
+        "Customizer"
+    ],
+    "extensions": [
+        {
+            
+            "name": "DNUG45 unHide New Community Button",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "match": {
+                    "user-name": [
+                        "Michael Siegrist",
+                        "Manfred Meise"
+                    ]
+                },
+                "include-files": [
+                    "DNUG45/Communities/unhideNewCommunityButton.js"
+                ],
+                "include-repo": {
+                    "name": "cnxc"
+                }
+            },
+            "path": "communities",
+            "application": "DNUG45 unHide New Community Button"
+        } 
+    ]
+}
