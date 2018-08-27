@@ -13,7 +13,7 @@
             "type": "com.ibm.customizer.ui",
             "payload": {
                 "include-files": [
-                    "EViTA/Config/Search/OpenNewWindowSearch.js"
+                    "EViTa/Config/Search/OpenNewWindowSearch.js"
                 ],
                 "include-repo": {
                     "name": "cnxc"
