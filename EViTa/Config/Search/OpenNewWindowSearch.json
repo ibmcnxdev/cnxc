@@ -1,6 +1,6 @@
 {
-    "name": "OpenNewWinodowSearch",
-    "title": "OpenNewWinodowSearch",
+    "name": "OpenNewWindowSearch",
+    "title": "OpenNewWindowSearch",
     "description": "add target=_blank to search results",
     "services": [
         "Customizer"
@@ -13,14 +13,14 @@
             "type": "com.ibm.customizer.ui",
             "payload": {
                 "include-files": [
-                    "EViTA/Config/Search/cnx-search.js"
+                    "EViTa/Config/Search/OpenNewWindowSearch.js"
                 ],
                 "include-repo": {
                     "name": "cnxc"
                 }
             },
             "path": "search",
-            "application": "OpenNewWinodowSearch",
+            "application": "OpenNewWindowSearch",
             "state": "disabled"
         }
     ]
