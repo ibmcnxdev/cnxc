@@ -1,0 +1,27 @@
+{
+    "name": "OpenNewWinodowSearch",
+    "title": "OpenNewWinodowSearch",
+    "description": "add target=_blank to search results",
+    "services": [
+        "Customizer"
+    ],
+    "state": "disabled",
+    "extensions": [
+        {
+            "id": "9d3e0114-30fc-44c1-bf33-f9cbd744a1d0",
+            "name": "10 Search Link Change",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "EViTA/Config/Search/cnx-search.js"
+                ],
+                "include-repo": {
+                    "name": "cnxc"
+                }
+            },
+            "path": "search",
+            "application": "OpenNewWinodowSearch",
+            "state": "disabled"
+        }
+    ]
+}
