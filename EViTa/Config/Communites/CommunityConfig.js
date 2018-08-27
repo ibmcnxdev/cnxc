@@ -33,6 +33,11 @@ if(typeof(dojo) != "undefined") {
             };
 
             waitFor( function(){
+				var el = document.getElementById("Members_navItem")
+                reloadFn = function() {
+                   window.location.reload();
+                }
+                el.addEventListener('click', reloadFn);
                 if (dojo.byId("memberAddButtonLink")) {
                     var arra =dojo.query(".lotusFloatContent.commFocusPT");
                     dojo.forEach(arra, function(item, index){
