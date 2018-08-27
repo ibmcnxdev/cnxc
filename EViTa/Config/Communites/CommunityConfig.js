@@ -6,6 +6,7 @@
 // @author       You
 // @include      *://apps.*collabserv.com/communities/service/html/communityview*fullpageWidgetId=Members
 // @include      *://apps.*collabserv.com/communities/service*fullpageWidgetId=Members
+// @include      *://apps.*collabserv.com/communities/service*
 // @grant        none
 // ==/UserScript==
 
