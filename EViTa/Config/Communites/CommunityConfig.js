@@ -1,16 +1,22 @@
 // ==UserScript==
 // @name         Add EViTa Community Config
 // @namespace    http://www.mmi-consult.de
-// @version      0.3
+// @version      0.4
 // @description  Add EViTa Community Config
 // @author       You
 // @include      *://apps.*collabserv.com/communities/service/html/communityview*fullpageWidgetId=Members
 // @include      *://apps.*collabserv.com/communities/service*fullpageWidgetId=Members
+// @include      *://apps.*collabserv.com/communities/service*
 // @grant        none
 // ==/UserScript==
 
 if(typeof(dojo) != "undefined") {
     	require(["dojo/domReady!","dojo/query", "dojo/NodeList-traverse"], function(){
+			var el = document.getElementById("Members_navItem")
+                reloadFn = function() {
+                   window.location.reload();
+                }
+                el.addEventListener('click', reloadFn);
         try {
             // utility function to let us wait for a specific element of the page to load...
             var waitFor = function(callback, elXpath, elXpathRoot, maxInter, waitTime) {
@@ -33,11 +39,7 @@ if(typeof(dojo) != "undefined") {
             };
 
             waitFor( function(){
-				var el = document.getElementById("Members_navItem")
-                reloadFn = function() {
-                   window.location.reload();
-                }
-                el.addEventListener('click', reloadFn);
+				
                 if (dojo.byId("memberAddButtonLink")) {
                     var arra =dojo.query(".lotusFloatContent.commFocusPT");
                     dojo.forEach(arra, function(item, index){
