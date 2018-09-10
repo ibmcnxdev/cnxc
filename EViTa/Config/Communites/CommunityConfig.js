@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Add EViTa Community Config
 // @namespace    http://www.mmi-consult.de
-// @version      0.4
+// @version      0.5
 // @description  Add EViTa Community Config
 // @author       You
 // @include      *://apps.*collabserv.com/communities/service/html/communityview*fullpageWidgetId=Members
@@ -16,7 +16,9 @@ if(typeof(dojo) != "undefined") {
                 reloadFn = function() {
                    window.location.reload();
                 }
+				if(el != null) {
                 el.addEventListener('click', reloadFn);
+				}
         try {
             // utility function to let us wait for a specific element of the page to load...
             var waitFor = function(callback, elXpath, elXpathRoot, maxInter, waitTime) {
