@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         EVita Config in Admin menu
+// @name         EViTA Config into CNX Admin menu
 // @namespace    https://www.mmi-consult.de
-// @version      0.2
-// @description  Add EViTA Global Config to CNX Admin Menu
+// @version      0.3
+// @description  Add EViTA Global Config into CNX Admin menu
 // @include		 https://*.collabserv.com/*
 // @include		 *://*.collabserv.com/*
 // @author       Michael.Siegrist@mmi-consult.de

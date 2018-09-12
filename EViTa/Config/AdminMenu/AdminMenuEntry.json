@@ -1,0 +1,26 @@
+{
+    "id": "",
+    "name": "Add EViTA Config into CNX Admin menu",
+    "title": "mmi - Add EViTA Config into CNX Admin menu",
+    "description": "Add EViTA Config into CNX Admin menu",
+    "services": [
+        "Customizer"
+    ],
+    "extensions": [
+        {
+            "id": "",
+            "name": "Add EViTA Config into CNX Admin menu",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "EViTa/Config/AdminMenu/AdminMenuEntry.js"
+                ],
+                "include-repo": {
+                    "name": "cnxc"
+                }
+            },
+            "path": "global",
+            "application": "Add EViTA Config into CNX Admin menu"
+        }
+    ]
+}
