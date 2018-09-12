@@ -1,22 +1,22 @@
 // ==UserScript==
 // @name         Add Edit EViTa Config To Profile
 // @namespace    http://www.mmi-consult.de
-// @version      0.9
+// @version      0.10
 // @description  Extend EViTa Config in User Profile
 // @author       Michael Siegrist
-// @include      https://apps.*collabserv.com/profiles/html/profileView.do?*
-// @include      *://apps.*collabserv.com/profiles/html/profileView.do?*
+// @include      https://*.collabserv.com/profiles/html/*
+// @include      *://*.collabserv.com/profiles/html/*
 // @grant        none
 // ==/UserScript==
 
 if(typeof(dojo) != "undefined") {
-    	require(["dojo/domReady!","dojo/query", "dojo/NodeList-traverse"], function(){
+    	require(["dojo/domReady!","dojo/query"], function(){
         try {
             // utility function to let us wait for a specific element of the page to load...
             var waitFor = function(callback, elXpath, elXpathRoot, maxInter, waitTime) {
                 if(!elXpathRoot) var elXpathRoot = dojo.body();
                 if(!maxInter) var maxInter = 10000;  // number of intervals before expiring
-                if(!waitTime) var waitTime = 1;  // 1000=1 second
+                if(!waitTime) var waitTime = 100;  // 1000=1 second
                 if(!elXpath) return;
                 var waitInter = 0;  // current interval
                 var intId = setInterval( function(){
