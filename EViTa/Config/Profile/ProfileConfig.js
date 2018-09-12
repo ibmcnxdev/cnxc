@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         Add Edit EViTa Config To Profile
 // @namespace    http://www.mmi-consult.de
-// @version      0.8
+// @version      0.9
 // @description  Extend EViTa Config in User Profile
 // @author       Michael Siegrist
-// @include      *://apps.*collabserv.com/profiles/html/profileView*
+// @include      https://apps.*collabserv.com/profiles/html/profileView.do?*
+// @include      *://apps.*collabserv.com/profiles/html/profileView.do?*
 // @grant        none
 // ==/UserScript==
 
