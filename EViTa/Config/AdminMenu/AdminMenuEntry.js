@@ -5,6 +5,7 @@
 // @description  Add EViTA Global Config into CNX Admin menu
 // @include		 https://*.collabserv.com/*
 // @include		 *://*.collabserv.com/*
+// @include		 https://*.mybluemix.net/*
 // @author       Michael.Siegrist@mmi-consult.de
 // @grant        none
 // ==/UserScript==
