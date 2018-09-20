@@ -100,7 +100,7 @@ if ((document.location.pathname === '/homepage/orgadmin/orgadmin.jsp') || (docum
                     let inviteLI = dojo.create('li', { class: 'manageorg' })
                     let getElemORG= dojo.query(".org._myorg");
                     let OrgID= getElemORG[0].href.substring(getElemORG[0].href.lastIndexOf('/')+1);
-                    let inviteA = dojo.create('a', { innerHTML: 'EViTA Config', id: 'mmiglobal', class: 'manageorg', target: '_parent',  href: 'https://justteamup.eu-de.mybluemix.net/justsearch/config/global/' + OrgID + "&locale=" + dojoConfig.locale,role: 'menuitem', tabindex: '0' },  inviteLI);
+                    let inviteA = dojo.create('a', { innerHTML: 'EViTA Config', id: 'mmiglobal', class: 'manageorg', target: '_parent',  href: 'https://justteamup.eu-de.mybluemix.net/justsearch/config/global/' + OrgID + "?locale=" + dojoConfig.locale,role: 'menuitem', tabindex: '0' },  inviteLI);
 	                dojo.place(inviteLI, logoutWidget[0], 'before');
 
                 } else {
