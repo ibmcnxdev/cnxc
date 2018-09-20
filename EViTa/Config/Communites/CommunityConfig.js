@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Add EViTa Community Config
 // @namespace    http://www.mmi-consult.de
-// @version      0.5
+// @version      0.6
 // @description  Add EViTa Community Config
 // @author       You
 // @include      *://apps.*collabserv.com/communities/service/html/communityview*fullpageWidgetId=Members
@@ -46,7 +46,7 @@ if(typeof(dojo) != "undefined") {
                     var arra =dojo.query(".lotusFloatContent.commFocusPT");
                     dojo.forEach(arra, function(item, index){
                         if (arra[index].innerText.slice(0,5)=="EViTA"){
-                            var strCLink='https://justteamup.eu-de.mybluemix.net/justsearch/config/community/' + communityActionData.communityOrgId+ '/' + communityActionData.uuid;
+                            var strCLink='https://justteamup.eu-de.mybluemix.net/justsearch/config/community/' + communityActionData.communityOrgId+ '/' + communityActionData.uuid + "?locale=" + dojoConfig.locale;
                             if (arra[index].lastChild.lastChild) {
 							dojo.place("<a> | </a><a role=\"button\" id=\"mmicommunity\" onclick=\"parent.location='https://justteamup.eu-de.mybluemix.net/justsearch/config/community/' + communityActionData.communityOrgId+ '/' + communityActionData.uuid+ '\"';\" href=\"https://justteamup.eu-de.mybluemix.net/justsearch/config/community/communityActionData.communityOrgId/communityActionData.uuid\"\" title=\"Config\" hastooltip=\"dijit_Tooltip_2664\">Config</a>",arra[index].lastChild.lastChild,"after");
 							} else

@@ -1,11 +1,10 @@
 // ==UserScript==
 // @name         EViTA Config into CNX Admin menu
 // @namespace    https://www.mmi-consult.de
-// @version      0.3
+// @version      0.4
 // @description  Add EViTA Global Config into CNX Admin menu
 // @include		 https://*.collabserv.com/*
 // @include		 *://*.collabserv.com/*
-// @include		 https://*.mybluemix.net/*
 // @author       Michael.Siegrist@mmi-consult.de
 // @grant        none
 // ==/UserScript==
@@ -101,7 +100,7 @@ if ((document.location.pathname === '/homepage/orgadmin/orgadmin.jsp') || (docum
                     let inviteLI = dojo.create('li', { class: 'manageorg' })
                     let getElemORG= dojo.query(".org._myorg");
                     let OrgID= getElemORG[0].href.substring(getElemORG[0].href.lastIndexOf('/')+1);
-                    let inviteA = dojo.create('a', { innerHTML: 'EViTA Config', id: 'mmiglobal', class: 'manageorg', target: '_parent',  href: 'https://justteamup.eu-de.mybluemix.net/justsearch/config/global/' + OrgID,role: 'menuitem', tabindex: '0' },  inviteLI);
+                    let inviteA = dojo.create('a', { innerHTML: 'EViTA Config', id: 'mmiglobal', class: 'manageorg', target: '_parent',  href: 'https://justteamup.eu-de.mybluemix.net/justsearch/config/global/' + OrgID + "?locale=" + dojoConfig.locale,role: 'menuitem', tabindex: '0' },  inviteLI);
 	                dojo.place(inviteLI, logoutWidget[0], 'before');
 
                 } else {
